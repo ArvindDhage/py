@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institute Information - Python Teacher</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fab fa-python"></i>
+                <span>Python Teacher</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="notes.html" class="nav-link">Notes</a></li>
+                <li><a href="announcements.html" class="nav-link">Announcements</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="institute.html" class="nav-link active">Institute</a></li>
+                <li>
+                    <button class="dark-mode-toggle" id="darkModeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="institute-slider">
+            <div class="institute-slide active" style="background-image: url('image/inst1.jpg')"></div>
+            <div class="institute-slide" style="background-image: url('image/inst2.jpg')"></div>
+            <div class="institute-slide" style="background-image: url('image/inst3.jpg')"></div>
+            <div class="institute-slide" style="background-image: url('image/inst4.jpg')"></div>
+        </div>
+        <div class="institute-overlay"></div>
+        <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+        </div>
+        <div class="container">
+            <h1>Institute Information</h1>
+            <p>Learn more about our Python training institute</p>
+        </div>
+    </section>
+
+    <!-- Institute Info Section -->
+    <section class="institute-section">
+        <div class="container">
+            <div class="institute-grid">
+                <!-- About Institute -->
+                <div class="institute-card">
+                    <div class="card-header">
+                        <i class="fas fa-building"></i>
+                        <h2>About Our Institute</h2>
+                    </div>
+                    <div class="card-content">
+                        <p>We are a premier Python training institute dedicated to providing high-quality programming education. Our mission is to make Python programming accessible to everyone through comprehensive courses and expert guidance.</p>
+                        <ul>
+                            <li>Established in 2018</li>
+                            <li>5000+ Students Trained</li>
+                            <li>95% Success Rate</li>
+                            <li>Experienced Faculty</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Address -->
+                <div class="institute-card">
+                    <div class="card-header">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h2>Address</h2>
+                    </div>
+                    <div class="card-content">
+                        <address>
+                            <strong>Python Learning Center</strong><br>
+                            Abdullah Height, Near Ambedkar School,<br>
+                            Beside Bharat Petrol Pump, Nagpur Road,<br>
+                            Hinganghat, Wardha-442301, Maharashtra.<br>
+                        </address>
+                        <div class="map-button-container">
+                            <a href="https://maps.google.com/?q=Abdullah Height, Near Ambedkar School, Beside Bharat Petrol Pump, Nagpur Road, Hinganghat, Wardha-442301, Maharashtra" 
+                               class="btn btn-primary" 
+                               target="_blank">
+                                <i class="fas fa-map-marked-alt"></i>
+                                View on Google Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timing -->
+                <div class="institute-card">
+                    <div class="card-header">
+                        <i class="fas fa-clock"></i>
+                        <h2>Class Timing</h2>
+                    </div>
+                    <div class="card-content">
+                        <div class="timing-schedule">
+                            <div class="timing-item">
+                                <strong>Regular Batch:</strong>
+                                <p>Monday - Friday: 6:00 PM - 8:00 PM</p>
+                            </div>
+                            <div class="timing-item">
+                                <strong>Weekend Batch:</strong>
+                                <p>Saturday - Sunday: 10:00 AM - 1:00 PM</p>
+                            </div>
+                            <div class="timing-item">
+                                <strong>Fast Track Batch:</strong>
+                                <p>Monday - Saturday: 7:00 AM - 9:00 AM</p>
+                            </div>
+                            <div class="timing-item">
+                                <strong>Office Hours:</strong>
+                                <p>Monday - Saturday: 9:00 AM - 9:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="institute-card">
+                    <div class="card-header">
+                        <i class="fas fa-phone-alt"></i>
+                        <h2>Contact Information</h2>
+                    </div>
+                    <div class="card-content">
+                        <div class="contact-grid">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <strong>Mobile:</strong>
+                                    <a href="tel:+918012345678">080 1234 5678</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                
+                                
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <strong>Email:</strong>
+                                    <a href="mailto:info@pythoninstitute.com">info@pythoninstitute.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Facilities -->
+                <div class="institute-card">
+                    <div class="card-header">
+                        <i class="fas fa-star"></i>
+                        <h2>Our Facilities</h2>
+                    </div>
+                    <div class="card-content">
+                        <div class="facilities-grid">
+                            <div class="facility-item">
+                                <i class="fas fa-wifi"></i>
+                                <span>High-Speed WiFi</span>
+                            </div>
+                            <div class="facility-item">
+                                <i class="fas fa-desktop"></i>
+                                <span>Computer Lab</span>
+                            </div>
+                            <div class="facility-item">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <span>Smart Classrooms</span>
+                            </div>
+                            <div class="facility-item">
+                                <i class="fas fa-book"></i>
+                                <span>Library Resources</span>
+                            </div>
+                            <div class="facility-item">
+                                <i class="fas fa-coffee"></i>
+                                <span>Refreshment Area</span>
+                            </div>
+                            <div class="facility-item">
+                                <i class="fas fa-parking"></i>
+                                <span>Parking Facility</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Courses Offered -->
+                <div class="institute-card">
+                    <div class="card-header">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h2>Courses Offered</h2>
+                    </div>
+                    <div class="card-content">
+                        <div class="courses-list">
+                            <div class="course-item">
+                                <h4>Python Basics</h4>
+                                <p>Duration: 4 weeks | Fee: ₹3,000</p>
+                            </div>
+                            <div class="course-item">
+                                <h4>Advanced Python</h4>
+                                <p>Duration: 6 weeks | Fee: ₹5,000</p>
+                            </div>
+                            <div class="course-item">
+                                <h4>Python for Data Science</h4>
+                                <p>Duration: 8 weeks | Fee: ₹8,000</p>
+                            </div>
+                            <div class="course-item">
+                                <h4>Python Web Development</h4>
+                                <p>Duration: 10 weeks | Fee: ₹12,000</p>
+                            </div>
+                            <div class="course-item">
+                                <h4>Full Stack Python</h4>
+                                <p>Duration: 12 weeks | Fee: ₹15,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Python Teacher</h4>
+                    <p>Your gateway to mastering Python programming</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="notes.html">Notes</a></li>
+                        <li><a href="announcements.html">Announcements</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://wa.me/1234567890" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:teacher@example.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Python Teacher. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

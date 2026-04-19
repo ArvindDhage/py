@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes - Python Teacher</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fab fa-python"></i>
+                <span>Python Teacher</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="notes.html" class="nav-link active">Notes</a></li>
+                <li><a href="announcements.html" class="nav-link">Announcements</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="institute.html" class="nav-link">Institute</a></li>
+                <li>
+                    <button class="dark-mode-toggle" id="darkModeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Python Course Notes</h1>
+            <p>Comprehensive study materials for your Python learning journey</p>
+        </div>
+    </section>
+
+    <!-- Notes Grid -->
+    <section class="notes-section">
+        <div class="container">
+
+            <h1>Once a lecture is cempleted , the notes for all the topics covered in that section will also be uploaded.</h1>
+           <!-- <div class="notes-grid">
+                <div class="note-card" onclick="openPDF('day1.pdf')">
+                    <div class="note-number">Day 1</div>
+                    <div class="note-title">Introduction to Python</div>
+                    <div class="note-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                </div>
+                <div class="note-card" onclick="openPDF('day2.pdf')">
+                    <div class="note-number">Day 2</div>
+                    <div class="note-title">Variables & Data Types</div>
+                    <div class="note-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                </div>
+                <div class="note-card" onclick="openPDF('day3.pdf')">
+                    <div class="note-number">Day 3</div>
+                    <div class="note-title">Operators & Expressions</div>
+                    <div class="note-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                </div>
+                <div class="note-card" onclick="openPDF('day4.pdf')">
+                    <div class="note-number">Day 4</div>
+                    <div class="note-title">Control Flow</div>
+                    <div class="note-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                </div>
+                <div class="note-card" onclick="openPDF('day5.pdf')">
+                    <div class="note-number">Day 5</div>
+                    <div class="note-title">Loops & Iterations</div>
+                    <div class="note-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                </div>
+                <div class="note-card" onclick="openPDF('day6.pdf')">
+                    <div class="note-number">Day 6</div>
+                    <div class="note-title">Lists & Tuples</div>
+                    <div class="note-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                </div>
+                <div class="note-card" onclick="openPDF('day7.pdf')">
+                    <div class="note-number">Day 7</div>
+                    <div class="note-title">Dictionaries & Sets</div>
+                    <div class="note-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                </div>
+                <div class="note-card" onclick="openPDF('day8.pdf')">
+                    <div class="note-number">Day 8</div>
+                    <div class="note-title">Functions</div>
+                    <div class="note-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                </div>
+                <div class="note-card" onclick="openPDF('day9.pdf')">
+                    <div class="note-number">Day 9</div>
+                    <div class="note-title">Object-Oriented Programming</div>
+                    <div class="note-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                </div>
+                <div class="note-card" onclick="openPDF('day10.pdf')">
+                    <div class="note-number">Day 10</div>
+                    <div class="note-title">File Handling</div>
+                    <div class="note-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                </div>
+                <div class="note-card" onclick="openPDF('day11.pdf')">
+                    <div class="note-number">Day 11</div>
+                    <div class="note-title">Exception Handling</div>
+                    <div class="note-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                </div>
+                <div class="note-card" onclick="openPDF('day12.pdf')">
+                    <div class="note-number">Day 12</div>
+                    <div class="note-title">Modules & Packages</div>
+                    <div class="note-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                </div>
+            -->
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Python Teacher</h4>
+                    <p>Your gateway to mastering Python programming</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="notes.html">Notes</a></li>
+                        <li><a href="announcements.html">Announcements</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://wa.me/1234567890" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:teacher@example.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Python Teacher. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
