@@ -183,12 +183,17 @@ function showNotification(message, type = 'info') {
 
 // Open PDF function for notes
 function openPDF(pdfName) {
-    // Create a modal or open PDF in new tab
-    // For demo purposes, we'll show a notification
-    showNotification(`Opening ${pdfName}...`, 'info');
-    
-    // In a real application, you would open the actual PDF
-    // window.open(`notes/${pdfName}`, '_blank');
+    try {
+        // Open PDF in new tab
+        window.open(pdfName, '_blank');
+        
+        // Show success notification
+        showNotification(`Opening ${pdfName.split('/').pop()}...`, 'success');
+    } catch (error) {
+        // Show error notification if PDF fails to open
+        showNotification(`Failed to open PDF: ${pdfName}`, 'error');
+        console.error('PDF open error:', error);
+    }
 }
 
 // Add active state to navigation based on current page
@@ -325,6 +330,33 @@ function printPage() {
     window.print();
 }
 
+// Contact Page Slider
+const contactSlides = document.querySelectorAll('.contact-slide');
+let currentContactSlide = 0;
+let contactSlideInterval;
+let isContactPaused = false;
+
+function showContactSlide(index) {
+    contactSlides[currentContactSlide].classList.remove('active');
+    currentContactSlide = index;
+    contactSlides[currentContactSlide].classList.add('active');
+}
+
+function nextContactSlide() {
+    const nextIndex = (currentContactSlide + 1) % contactSlides.length;
+    showContactSlide(nextIndex);
+}
+
+function startContactSlider() {
+    if (!isContactPaused && contactSlides.length > 0) {
+        contactSlideInterval = setInterval(nextContactSlide, 4000); // 4 seconds
+    }
+}
+
+function stopContactSlider() {
+    clearInterval(contactSlideInterval);
+}
+
 // Institute Page Slider
 const instituteSlides = document.querySelectorAll('.institute-slide');
 const instituteDots = document.querySelectorAll('.dot');
@@ -357,8 +389,28 @@ function stopInstituteSlider() {
     clearInterval(instituteSlideInterval);
 }
 
-// Initialize institute slider
+// Initialize sliders
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize contact slider
+    if (contactSlides.length > 0) {
+        startContactSlider();
+        
+        // Pause on hover
+        const contactPageHeader = document.querySelector('.page-header');
+        if (contactPageHeader) {
+            contactPageHeader.addEventListener('mouseenter', () => {
+                isContactPaused = true;
+                stopContactSlider();
+            });
+            
+            contactPageHeader.addEventListener('mouseleave', () => {
+                isContactPaused = false;
+                startContactSlider();
+            });
+        }
+    }
+    
+    // Initialize institute slider
     if (instituteSlides.length > 0) {
         // Start auto-slide
         startInstituteSlider();

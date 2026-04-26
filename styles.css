@@ -311,6 +311,7 @@ body {
 /* Page Header */
 .page-header {
     position: relative;
+    background-color: #4facfe;
     color: white;
     padding: 80px 0;
     text-align: center;
@@ -319,7 +320,47 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: linear-gradient(135deg, #3776ab);
+}
+
+.contact-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.contact-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+}
+
+.contact-slide.active {
+    opacity: 1;
+}
+
+.contact-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.page-header .container {
+    position: relative;
+    z-index: 3;
 }
 
 .institute-slider {
@@ -823,7 +864,7 @@ body {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background-color: #25d366;
+    background-color: #d44638; /* Gmail red */
     color: white;
     width: 60px;
     height: 60px;
@@ -833,14 +874,14 @@ body {
     justify-content: center;
     font-size: 2rem;
     text-decoration: none;
-    box-shadow: var(--shadow-lg);
-    transition: var(--transition);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: 0.3s;
     z-index: 1000;
 }
 
 .whatsapp-float:hover {
     transform: scale(1.1);
-    box-shadow: 0 15px 25px rgba(37, 211, 102, 0.3);
+    box-shadow: 0 15px 25px rgba(212, 70, 56, 0.4);
 }
 
 /* Footer */
